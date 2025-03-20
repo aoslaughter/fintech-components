@@ -6,7 +6,7 @@ __pycache__
 db.sqlite3
 /env
 .env
-./assets
+/assets
 /auth
 /fintech-frontend
 /fintech-frontend-js
