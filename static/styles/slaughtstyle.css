@@ -1,0 +1,49 @@
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 2px;
+    padding: 60px 25px 60px;
+}
+.form-nav {
+    flex-direction: row;
+}
+
+.landing {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-main {
+    background: #ffffff url("images/panels.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #d3d3d3;
+}
+.landing-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, .4)
+}

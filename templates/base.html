@@ -1,0 +1,22 @@
+{% load django_vite %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="content-type" content="text/javascript"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Project</title>
+
+    {% vite_hmr_client %}
+
+    {% vite_asset 'static/primary/main.js' %}
+
+</head>
+<body>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+*.pyc
+.venv
+.vscode
+.idea
+__pycache__
+db.sqlite3
+/env
+.env
+./assets
+/auth
+/fintech-frontend
+/fintech-frontend-js
+node_modules
+package-lock.json

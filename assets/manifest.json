@@ -1,0 +1,8 @@
+{
+  "static/primary/main.js": {
+    "file": "django-assets/test-DLYTezPV.js",
+    "name": "test",
+    "src": "static/primary/main.js",
+    "isEntry": true
+  }
+}

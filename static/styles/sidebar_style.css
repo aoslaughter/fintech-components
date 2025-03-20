@@ -1,0 +1,58 @@
+.sidebar {
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightsteelblue;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.other-nav {
+    position: absolute;
+    bottom: 0;
+}
+.other-nav a {
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: whitesmoke;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+.openbtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: lightsteelblue;
+}
+
+.openbtn:hover {
+    background-color: lightslategray;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a{font-size: 18px}
+}
