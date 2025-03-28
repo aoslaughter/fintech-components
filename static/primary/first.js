@@ -1,3 +1,3 @@
-export function whatsUp(name) {
-    console.log(`What's up, ${name}`)
+export function greetings(name) {
+    console.log(`Hello, ${name}`)
 }
