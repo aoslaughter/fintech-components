@@ -1,5 +1,5 @@
 from django.db import models
-from .model_support.choice_sets import markets, technologies
+from .model_support.choice_sets import *
 
 # Create your models here.
 
@@ -61,5 +61,17 @@ class FinancialIO(models.Model):
     portfolio = models.ForeignKey(
         Portfolio, on_delete=models.CASCADE, related_name="%(class)s_set"
         )
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
+class ReturnsModelData(models.Model):
+    date = models.DateField(default=None)
+    amount = models.DecimalField(null=True, max_digits=20, decimal_places=3, default=0.0)
+    category = models.CharField(max_length=50, choices=returns_model_choices, null=True)
+    project_informed = models.BooleanField(null=True, default=0)
+    proceed_category = models.CharField(max_length=50, choices=proceed_choices, null=True)
+    data_status = models.CharField(max_length=50, choices=data_statuses, null=True, default=None)
+    projection_source = models.CharField(max_length=50, choices=projection_choices, null=True, default=None)
+    financial_solution = models.ForeignKey(FinancialIO, on_delete=models.CASCADE, default=None, related_name='%(class)s_set')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
